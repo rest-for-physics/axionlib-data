@@ -1,4 +1,4 @@
-# Solar axion Primakoff flux (computed by Maurizio Giannotti for gagamma = 10^-10 GeV^-1)
+# Differential solar axion Primakoff flux d^2Phi/dEdr (computed by Maurizio Giannotti for g_agamma = 10^-10 GeV^-1; edited by Sebastian Hoof)
 # Columns: Radius on solar disc [R_sol] | Energy [keV] | Flux [s^-1 cm^-2 keV^-1] Primakoff flux [s^-1 cm^-2 keV^-1] | Axion-electron flux (empty)
 0.00 0.1 1.255168000e+04 0
 0.00 0.2 2.102418360e+05 0
