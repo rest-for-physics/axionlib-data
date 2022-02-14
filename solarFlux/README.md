@@ -28,7 +28,7 @@ Basic conventions
 - `File format` : The format of the tables is fixed to 100 lines. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.01 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.99 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
 
 
-List of solar models available
+List of solar flux tables available
 ==============================
 
 - `Primakoff_Gianotti_201904.dat` : TOBE WRITTEN. References and notes.
