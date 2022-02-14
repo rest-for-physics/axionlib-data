@@ -1,35 +1,31 @@
 
-File : README.md
+## Description
 
-Creation Date : 4th April 2019
+This data directory contains the description of different solar axion flux tables that can be accessed using the `TRestAxionSolarFlux` object. To learn on how to use `TRestAxionSolarFlux` visit the [REST-for-Physics API](https://sultan.unizar.es/rest/).
 
-Database manager : Maurizio Gianotti
-
----
-
-Description
-===========
-
-This data directory contains the description of different solar axion models that can be accessed using the `TRestAxionSolarModel` object. To learn on how to use `TRestAxionSolarModel` visit the file containing the source code, TRestAxionSolarModel.cxx.
-
-Each axion solar model (or production mechanism) provides the pre-integrated(+) solar disc axion flux as a function of the solar radius and energy.
+Each axion solar table (due to different production mechanisms) provides the pre-integrated(+) solar disc axion flux as a function of the solar radius and energy.
 
 (+) The effective solar axion flux is integrated to the corresponding solar disk (ring) area.
 
-Basic conventions
-=================
+## Basic conventions
 
-- `File contents` : Each value inside the file corresponds to the calculated axion flux on Earth for a given Earth-Sun distance. Sun-Earth distance = XXX units. 
+- `File contents` : Each value inside the file corresponds to the calculated axion flux on Earth for the average Sun-Earth distance. 
 
 - `Filename` : MODEL_AUTHOR_YYYYMM.dat, where MODEL stands for the solar axion production mechanism.
 
-- `Units` : The solar flux given in the tables are measured in cm-2 s-1 keV-1
+- `File types` : There are two types of data files.
+	+ `Continuum:` flux definitions where we find the definition of continuum spectra as a function of the solar radius. These files will have extension `.dat`.
+	+ `Monochromatic:` flux defitions where we find different spectral lines and their intensity as a function of the solar radius. These files will have extension `.spt`.
 
-- `File format` : The format of the tables is fixed to 100 lines. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.01 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.99 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
+- `Units` : The solar flux given in the `.dat` tables will be measured in cm-2 s-1 keV-1. The solar flux given in the `.spt` tables will be measured in cm-2 s-1.
+
+- `File format` : 
+	+ `.dat` tables: The format of the tables is fixed to 100 lines. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.01 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.99 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
+	+ `.spt` tables: The format of the tables is fixed to 101 lines. The first line defines the energy of the monochromatic line in keV. Lines from 2 to 101 inside the file corresponds to the intensity of the spectral line integrated to a particular solar ring, the first line corresponding to the inner ring (Rtop = 0.01 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.99 x Rsun). Any number of columns might be found inside the file in order to introduce a set of monochromatic lines including its solar radius dependency.
 
 
-List of solar flux tables available
-==============================
+## List of solar flux tables available
 
 - `Primakoff_Gianotti_201904.dat` : TOBE WRITTEN. References and notes.
 
+- `Dummy_Galan_202202.spt` : It contains two monochromatic lines. A 3keV line emitted at about 0.25 solar radius, and a 5keV line emitted at 0.75 solar radius.
