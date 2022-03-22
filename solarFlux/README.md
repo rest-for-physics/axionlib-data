@@ -23,9 +23,9 @@ Each axion solar table (due to different production mechanisms) provides the pre
 ## List of solar flux tables available
 
 ### Continuum tables
-- `Primakoff_Gianotti_201904.dat` : TOBE WRITTEN. References and notes.
+- `Primakoff_Gianotti_201904.dat`.
 
-- `Primakoff_LennertHoof_202203.dat` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library.
+- `Primakoff_LennertHoof_202203.dat` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library. Calculated with newer BP04 solar model, includes electron degeneracy in comparison to `Primakoff_Gianotti_201904.dat`.
 
 ### Monochromatic tables
 - `Dummy_Galan_202202.spt` : It contains two monochromatic lines. A 3keV line emitted at about 0.25 solar radius, and a 5keV line emitted at 0.75 solar radius.
