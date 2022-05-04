@@ -46,5 +46,11 @@ python3 fluxTables.py -h
 
 - `Primakoff_LennertHoof_202203.dat` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library. Calculated with newer BP04 solar model, includes electron degeneracy in comparison to `Primakoff_Gianotti_201904.dat`.
 
+- `ABC_LennertHoof_202203.dat/.N200f` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library. Generated from original `ABC_LennertHoof_202204.flux`. Credit: Lennert Thormahlen. 
+
 ### Monochromatic tables
-- `Dummy_Galan_202202.spt` : It contains two monochromatic lines. A 3keV line emitted at about 0.25 solar radius, and a 5keV line emitted at 0.75 solar radius.
+- `Dummy_Galan_202202.spt` : It contains two monochromatic lines. A 3keV line emitted at about 0.25 solar radius, and a 5keV line emitted at 0.75 solar radius. Example for testing/demonstration.
+
+- `ABC_LennertHoof_202203.spt` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library. Generated from original `ABC_LennertHoof_202204.flux`. Credit: Lennert Thormahlen. 
+
+- `Fe57_LennertHoof_202204.spt` : Generated using [SolarAxionFlux](https://github.com/sebhoof/SolarAxionFlux) library. Generated from original `Fe57_LennertHoof_202204.flux`. Credit: Lennert Thormahlen. 

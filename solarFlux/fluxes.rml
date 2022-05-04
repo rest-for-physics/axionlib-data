@@ -68,5 +68,17 @@
 
 		<parameter name="seed" value="137" />
 	</TRestAxionSolarFlux>
+
+	<TRestAxionSolarFlux name="LennertHoofFe57_Flux" verboseLevel="warning" >
+		<parameter name="couplingType" value="g_eff"/>
+		<parameter name="couplingStrength" value="1"/>
+		<parameter name="fluxDataFile" value="Fe57_LennertHoof_202204.flux"/>
+
+		<parameter name="binSize" value="1eV" />
+		<parameter name="fluxBinSize" value="1meV" />
+		<parameter name="peakSigma" value="10" />
+
+		<parameter name="seed" value="137" />
+	</TRestAxionSolarFlux>
 </axion>
 
