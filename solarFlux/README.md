@@ -29,17 +29,15 @@ Each axion solar table (due to different production mechanisms) provides the pre
 
 ## List of solar flux tables available
 
-The files available have been produced with the `fluxToTable.py` script. Simply used as:
+The original `.flux` files produced originally have been translated into tables (N200f,dat,spt) using the following recipe:
 
 ```
-python3 fluxToTables.py --f input_file.flux
+TRestAxionSolarFlux flux("fluxes.rml", "FluxName");
+flux.LoadTables();
+flux.ExportTables();
 ```
 
-For additional options and adapt to different specifications inside the flux file check the different options using:
-
-```
-python3 fluxTables.py -h
-```
+The resulting tables will found at `~/.rest/export/` directory. For additional details check the [TRestAxionSolarFlux documentation](https://sultan.unizar.es/rest/classTRestAxionSolarFlux.html).
 
 ### Continuum tables
 - `Primakoff_Gianotti_201904.dat`.
