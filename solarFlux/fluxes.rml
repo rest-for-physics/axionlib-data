@@ -75,7 +75,6 @@
 		<parameter name="fluxDataFile" value="Fe57_LennertHoof_202204.flux"/>
 
 		<parameter name="binSize" value="1eV" />
-		<parameter name="fluxBinSize" value="1meV" />
 		<parameter name="peakSigma" value="10" />
 
 		<parameter name="seed" value="137" />
