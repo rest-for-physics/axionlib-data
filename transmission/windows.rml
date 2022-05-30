@@ -11,14 +11,31 @@
 	<TRestAxionXrayWindow name="strongBack" verboseLevel="info">
 		<parameter name="center" value="(0,0,0)mm" />
 
-		<parameter name="windowType" value="grid" />
 		<parameter name="thickness" value="200um" />
 		<parameter name="material" value="Si" />
-		<parameter name="radius" value="8mm" />
 
+		<parameter name="radius" value="8mm" />
+		<parameter name="windowType" value="grid" />
 		<parameter name="patternWidth" value="0.5mm" />
 		<parameter name="patternGap" value="4mm" />
 		<parameter name="patternOffset" value="2mm" />
+
+	</TRestAxionXrayWindow>
+
+	<TRestAxionXrayWindow name="siliconStrongBack" verboseLevel="info">
+		<parameter name="center" value="(0,0,0)mm" />
+
+		<parameter name="thickness" value="200um" />
+		<parameter name="material" value="Si" />
+
+		<TRestGridMask name="mask" verboseLevel="warning">
+			<parameter name="maskRadius" value="8mm"/>
+			<parameter name="offset" value="(2,2)mm"/>
+			<parameter name="rotationAngle" value="0.5"/>
+			<parameter name="gridGap" value="4mm"/>
+			<parameter name="gridThickness" value="0.5mm"/>
+		</TRestGridMask>
+
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="cathode" verboseLevel="info">
