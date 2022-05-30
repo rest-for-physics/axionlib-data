@@ -1,49 +1,14 @@
 <transmission>
-	<TRestAxionXrayWindow name="siliconFoil" verboseLevel="info">
+	<TRestAxionXrayWindow name="siliconFoil" verboseLevel="info" center="(0,0,0)mm" thickness="0.3um" material="Si3N4" />
+
+	<TRestAxionXrayWindow name="strongBack" verboseLevel="warning">
 		<parameter name="center" value="(0,0,0)mm" />
-
-		<parameter name="type" value="foil" />
-		<parameter name="thickness" value="0.3um" />
-		<parameter name="material" value="Si3N4" />
-		<parameter name="radius" value="8mm" />
-	</TRestAxionXrayWindow>
-
-	<TRestAxionXrayWindow name="strongBack" verboseLevel="info">
-		<parameter name="center" value="(0,0,0)mm" />
-
 		<parameter name="thickness" value="200um" />
 		<parameter name="material" value="Si" />
 
-		<parameter name="radius" value="8mm" />
-		<parameter name="windowType" value="grid" />
-		<parameter name="patternWidth" value="0.5mm" />
-		<parameter name="patternGap" value="4mm" />
-		<parameter name="patternOffset" value="2mm" />
-
+		<TRestGridMask name="mask" verboseLevel="warning" maskRadius="8mm" offset="(2,2)mm" 
+			rotationAngle="0.5" gridGap="4mm" gridThickness="0.5mm" />
 	</TRestAxionXrayWindow>
 
-	<TRestAxionXrayWindow name="siliconStrongBack" verboseLevel="info">
-		<parameter name="center" value="(0,0,0)mm" />
-
-		<parameter name="thickness" value="200um" />
-		<parameter name="material" value="Si" />
-
-		<TRestGridMask name="mask" verboseLevel="warning">
-			<parameter name="maskRadius" value="8mm"/>
-			<parameter name="offset" value="(2,2)mm"/>
-			<parameter name="rotationAngle" value="0.5"/>
-			<parameter name="gridGap" value="4mm"/>
-			<parameter name="gridThickness" value="0.5mm"/>
-		</TRestGridMask>
-
-	</TRestAxionXrayWindow>
-
-	<TRestAxionXrayWindow name="cathode" verboseLevel="info">
-		<parameter name="center" value="(0,0,0)mm" />
-
-		<parameter name="type" value="foil" />
-		<parameter name="thickness" value="0.02um" />
-		<parameter name="material" value="Al" />
-		<parameter name="radius" value="8mm" />
-	</TRestAxionXrayWindow>
+	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" />
 </transmission>
