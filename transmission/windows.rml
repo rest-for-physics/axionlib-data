@@ -10,5 +10,14 @@
 			rotationAngle="0.5" gridGap="4mm" gridThickness="0.5mm" />
 	</TRestAxionXrayWindow>
 
+	<TRestAxionXrayWindow name="stripped" verboseLevel="warning">
+		<parameter name="center" value="(0,0,0)mm" />
+		<parameter name="thickness" value="200um" />
+		<parameter name="material" value="Si" />
+
+		<TRestStrippedMask name="mask" verboseLevel="warning" maskRadius="8mm" offset="(2,2)mm"
+			rotationAngle="0.5" stripsGap="4mm" stripsThickness="0.5mm" />
+	</TRestAxionXrayWindow>
+
 	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" />
 </transmission>
