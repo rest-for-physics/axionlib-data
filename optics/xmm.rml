@@ -1,0 +1,18 @@
+<xml>
+	<globals>
+		<constant name="R0" value="153.126" />
+		<constant name="pi" value="3.1415927" />
+	</globals>
+
+	<TRestAxionWolterOptics name="xmm" verboseLevel="info" >
+		<parameter name="opticsFile" value="XMM.Wolter" />
+		
+		<!--
+		<parameter name="spiderArmsSeparationAngle" value="pi*20/180." />
+		<parameter name="spiderOffsetAngle" value="0.0" />
+		<parameter name="spiderWidth" value="pi*2.5/180." />
+		<parameter name="spiderStartRadius" value="R0" units="mm" />
+		-->
+	
+	</TRestAxionWolterOptics>
+</xml>
