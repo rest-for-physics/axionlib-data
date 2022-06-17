@@ -1,18 +1,21 @@
 <xml>
 	<globals>
-		<constant name="R0" value="153.126" />
 		<constant name="pi" value="3.1415927" />
 	</globals>
 
-	<TRestAxionWolterOptics name="xmm" verboseLevel="info" >
+	<TRestAxionWolterOptics name="xmm" verboseLevel="debug" >
 		<parameter name="opticsFile" value="XMM.Wolter" />
+
+		<parameter name="mirrorLength" value="300" />
 		
-		<!--
-		<parameter name="spiderArmsSeparationAngle" value="pi*20/180." />
-		<parameter name="spiderOffsetAngle" value="0.0" />
-		<parameter name="spiderWidth" value="pi*2.5/180." />
-		<parameter name="spiderStartRadius" value="R0" units="mm" />
-		-->
+		<TRestSpiderMask name="spider" verboseLevel="info">
+			<parameter name="maskRadius" value="70cm"/>
+			<parameter name="offset" value="(0,0)cm"/>
+			<parameter name="rotationAngle" value="0"/>
+			<parameter name="armsWidth" value="2.5deg"/>
+			<parameter name="armsSeparationAngle" value="180./16degrees"/>
+			<parameter name="initialRadius" value="0cm"/>
+		</TRestSpiderMask>
 	
 	</TRestAxionWolterOptics>
 </xml>
