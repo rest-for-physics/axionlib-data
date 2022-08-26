@@ -3,7 +3,7 @@
 		<constant name="pi" value="3.1415927" />
 	</globals>
 
-	<TRestAxionWolterOptics name="xmm" verboseLevel="warning" >
+	<TRestAxionTrueWolterOptics name="xmm" verboseLevel="warning" >
 		<parameter name="opticsFile" value="XMM.trueWolter" />
 
 		<parameter name="mirrorLength" value="300" />
@@ -27,5 +27,5 @@
 			<parameter name="initialRadius" value="0cm"/>
 		</TRestSpiderMask>
 	
-	</TRestAxionWolterOptics>
+	</TRestAxionTrueWolterOptics>
 </xml>
