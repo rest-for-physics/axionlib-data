@@ -1,0 +1,31 @@
+<xml>
+	<globals>
+		<constant name="pi" value="3.1415927" />
+	</globals>
+
+	<TRestAxionTrueWolterOptics name="xmm" verboseLevel="warning" >
+		<parameter name="opticsFile" value="XMM.trueWolter" />
+
+		<parameter name="mirrorLength" value="300" />
+
+		<TRestAxionOpticsMirror name="XMM">
+			<parameter name="mirrorType" value="Single" />
+
+			<parameter name="layerTop" value="Au" />
+			<parameter name="layerThicknessTop" value="250" />
+			<parameter name="sigmaTop" value="0.4" />
+
+			<parameter name="substrate" value="Ni" />
+		</TRestAxionOpticsMirror>
+		
+		<TRestSpiderMask name="spider" verboseLevel="warning">
+			<parameter name="maskRadius" value="70cm"/>
+			<parameter name="offset" value="(0,0)cm"/>
+			<parameter name="rotationAngle" value="0"/>
+			<parameter name="armsWidth" value="2.29deg"/>
+			<parameter name="armsSeparationAngle" value="360./16degrees"/>
+			<parameter name="initialRadius" value="0cm"/>
+		</TRestSpiderMask>
+	
+	</TRestAxionTrueWolterOptics>
+</xml>
