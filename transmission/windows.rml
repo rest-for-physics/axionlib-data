@@ -20,4 +20,7 @@
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" />
+		<TRestPatternMask name="mask" verboseLevel="warning" maskRadius="8mm" />
+	</TRestAxionXrayWindow>
+	
 </transmission>
