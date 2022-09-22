@@ -19,7 +19,7 @@
 			rotationAngle="0.5" stripsGap="4mm" stripsThickness="0.5mm" />
 	</TRestAxionXrayWindow>
 
-	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" />
+	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" >
 		<TRestPatternMask name="mask" verboseLevel="warning" maskRadius="8mm" />
 	</TRestAxionXrayWindow>
 	
