@@ -1,5 +1,7 @@
 <transmission>
-	<TRestAxionXrayWindow name="siliconFoil" verboseLevel="info" center="(0,0,0)mm" thickness="0.3um" material="Si3N4" />
+	<TRestAxionXrayWindow name="siliconFoil" verboseLevel="info" center="(0,0,0)mm" thickness="0.3um" material="Si3N4" >
+		<TRestPatternMask name="mask" verboseLevel="warning" maskRadius="8mm" />
+	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="strongBack" verboseLevel="warning">
 		<parameter name="center" value="(0,0,0)mm" />
