@@ -7,7 +7,7 @@ The response matrix has been calculated using a Geant4 MonteCarlo simulation, by
 
 ### Files naming convention
 
-Each file represents the response matrix for a different gas mixture with 2-components, the filename defines those two components, the percentage of the second component and the total pressure of the mixture. Thus, `XenonNeon_20Pct_1.2bar.N150f` defines a xenon-neon mixture with 80% xenon and 20% neon, measured in mass, and a total pressure of 1.2bar. The pressure here is used as a scaling law.
+Each file represents the response matrix for a different gas mixture with 2-components, the filename defines those two components, the percentage of the second component and the total pressure of the mixture. Thus, `XenonNeon_20Pct_1.2bar.N150f` defines a xenon-neon mixture with 80% xenon and 20% neon (measured in mass) and a total pressure of 1.2bar. The pressure here is used as a scaling law.
 
 ### Response matrix generation
 
@@ -24,3 +24,12 @@ std::vector< std::vector <Float_t> > d;
 TRestTools::ReadBinaryTable( "XenonNeon_50Pct_1.2bar.N150f", d );
 TRestTools::PrintTable( d, 2, 4 ); // Prints the rows between 2 and 4.
 ```
+
+or simply writting the row to be printed inside `restRoot`:
+
+```
+root [1] TRestTools::ReadBinaryTable( "XenonNeon_50Pct_1.2bar.N150f", d );
+root [2] d[10]
+(__gnu_cxx::__alloc_traits<std::allocator<std::vector<float, std::allocator<float> > >, std::vector<float, std::allocator<float> > >::value_type &) { 0.000137778f, 0.000164444f, 0.000182222f, 0.000133333f, 7.55556e-05f, 8.44445e-05f, 0.000271111f, 0.000302222f, 0.000395556f, 0.000204444f, 0.661942f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 
+```
+
