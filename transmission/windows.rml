@@ -9,7 +9,7 @@
 		<parameter name="material" value="Si" />
 
 		<TRestGridMask name="mask" verboseLevel="warning" maskRadius="8mm" offset="(2,2)mm" 
-			rotationAngle="0.5" gridGap="4mm" gridThickness="0.5mm" />
+			rotationAngle="45degrees" gridGap="4mm" gridThickness="0.5mm" />
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="stripped" verboseLevel="warning">
