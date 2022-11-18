@@ -12,6 +12,30 @@
 			rotationAngle="45degrees" gridGap="4mm" gridThickness="0.5mm" />
 	</TRestAxionXrayWindow>
 
+	<TRestAxionXrayWindow name="MicromegasAluminumFoil" thickness="0.04um" material="Al" >
+		<TRestPatternMask name="foil" maskRadius="8mm" />
+	</TRestAxionXrayWindow>
+
+	<TRestAxionXrayWindow name="MicromegasStrongBack" verboseLevel="warning">
+		<parameter name="center" value="(0,0,0)mm" />
+		<parameter name="thickness" value="1mm" />
+		<parameter name="material" value="Cu" />
+
+		<TRestSpiderMask name="TieFighter" verboseLevel="info">
+			<parameter name="maskRadius" value="8.5mm"/>
+			<parameter name="offset" value="(0,0)cm"/>
+			<parameter name="rotationAngle" value="0deg"/>
+			<parameter name="armsWidth" value="0.6745deg"/>
+			<parameter name="armsSeparationAngle" value="45degrees"/>
+			<parameter name="initialRadius" value="4.55mm"/>
+			<parameter name="internalRegionRadius" value="4.25mm"/>
+		</TRestSpiderMask>
+	</TRestAxionXrayWindow>
+
+	<TRestAxionXrayWindow name="MicromegasMylar" verboseLevel="info" center="(0,0,0)mm" thickness="3.5um" material="C10H8O4" >
+		<TRestPatternMask name="mask" verboseLevel="warning" maskRadius="8mm" />
+	</TRestAxionXrayWindow>
+
 	<TRestAxionXrayWindow name="stripped" verboseLevel="warning">
 		<parameter name="center" value="(0,0,0)mm" />
 		<parameter name="thickness" value="200um" />
