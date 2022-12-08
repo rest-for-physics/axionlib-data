@@ -13,11 +13,11 @@
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="MicromegasMylar" thickness="3.5um" material="C10H8O4" >
-		<TRestPatternMask name="mylar" maskRadius="8mm" />
+		<TRestPatternMask name="mylar" maskRadius="8.5mm" />
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="MicromegasAluminumFoil" thickness="0.04um" material="Al" >
-		<TRestPatternMask name="foil" maskRadius="8mm" />
+		<TRestPatternMask name="foil" maskRadius="8.5mm" />
 	</TRestAxionXrayWindow>
 
 	<TRestAxionXrayWindow name="MicromegasStrongBack" verboseLevel="warning">
