@@ -2,11 +2,11 @@
 
 <axion>
 	<!-- This is obsolete. It should be TRestAxionSolarSpectrum 
-	<TRestAxionSolarFlux name="sunPrimakoff" >
+	<TRestAxionSolarQCDFlux name="sunPrimakoff" >
 		<parameter name="solarAxionModel" value="arXiv_0702006_Primakoff"/>
-	</TRestAxionSolarFlux> -->
+	</TRestAxionSolarQCDFlux> -->
 
-	<TRestAxionSolarFlux name="combined" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="combined" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ag"/>
 		<parameter name="couplingStrength" value="1.e-10"/>
 		<!-- We could add a scale field inside these parameters to re-scale their fluxes -->
@@ -14,33 +14,33 @@
 		<parameter name="fluxSptFile" value="Dummy_Galan_202202.spt"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="mono" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="mono" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ag"/>
 		<parameter name="couplingStrength" value="1.e-10"/>
 		<parameter name="fluxSptFile" value="Dummy_Galan_202202.spt"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="Gianotti" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="Gianotti" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ag"/>
 		<parameter name="couplingStrength" value="1.e-10"/>
 		<parameter name="fluxDataFile" value="Primakoff_Gianotti_201904.dat"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofPrimakoff" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofPrimakoff" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ag"/>
 		<parameter name="couplingStrength" value="1.e-10"/>
 		<parameter name="fluxDataFile" value="Primakoff_LennertHoof_202203.dat"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofABC_Flux" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofABC_Flux" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ae"/>
 		<parameter name="couplingStrength" value="1.e-13"/>
 		<parameter name="fluxDataFile" value="ABC_LennertHoof_202203.flux"/>
@@ -49,27 +49,27 @@
 		<parameter name="peakSigma" value="10" />
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofABC" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofABC" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ae"/>
 		<parameter name="couplingStrength" value="1.e-13"/>
 		<parameter name="fluxDataFile" value="ABC_LennertHoof_202203.N200f"/>
 		<parameter name="fluxSptFile" value="ABC_LennertHoof_202203.spt"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofABC_Mono" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofABC_Mono" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_ae"/>
 		<parameter name="couplingStrength" value="1.e-13"/>
 		<parameter name="fluxDataFile" value=""/>
 		<parameter name="fluxSptFile" value="ABC_LennertHoof_202203.spt"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofFe57_Flux" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofFe57_Flux" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_eff"/>
 		<parameter name="couplingStrength" value="1"/>
 		<parameter name="fluxDataFile" value="Fe57_LennertHoof_202204.flux"/>
@@ -78,14 +78,14 @@
 		<parameter name="peakSigma" value="10" />
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarFlux name="LennertHoofFe57" verboseLevel="warning" >
+	<TRestAxionSolarQCDFlux name="LennertHoofFe57" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_eff"/>
 		<parameter name="couplingStrength" value="1"/>
 		<parameter name="fluxSptFile" value="Fe57_LennertHoof_202204.spt"/>
 
 		<parameter name="seed" value="137" />
-	</TRestAxionSolarFlux>
+	</TRestAxionSolarQCDFlux>
 </axion>
 
