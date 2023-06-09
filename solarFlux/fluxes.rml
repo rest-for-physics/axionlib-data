@@ -87,5 +87,14 @@
 
 		<parameter name="seed" value="137" />
 	</TRestAxionSolarQCDFlux>
+
+	<TRestAxionSolarHiddenPhotonFlux name="OSheaHiddenPhoton" verboseLevel=="warning" >
+		<parameter name="couplingType" value="g_eff"/>
+		<parameter name="couplingStrength" value="1"/>
+		<parameter name="fluxDataFile" value="hiddenPhoton_flux_OShea_202306.dat"/>
+
+		<parameter name="seed" value="137" />
+	</TRestAxionSolarHiddenPhotonFlux>
+
 </axion>
 
