@@ -5,7 +5,7 @@ This data directory contains the description of different solar hidden photon fl
 
 ## Basic conventions
 
-- **File contents**: Each value inside the file corresponds to the calculated axion flux on Earth for the average Sun-Earth distance.
+- **File contents**: Each value inside the file corresponds to the calculated hidden photon flux on Earth for the average Sun-Earth distance.
 
 - **Filename**: hiddenPhoton_DATA_AUTHOR_YYYYMM.dat, where DATA stands for the contents of the file, which can be:
 
@@ -13,7 +13,7 @@ This data directory contains the description of different solar hidden photon fl
 
 	+ `plasmaFreq`: The solar plasma frequency as a function of solar radius.
 
-	+ `omegaGamma`: The width of the hidden photon resonant production as a function of solar radius and hidden photon energy.
+	+ `omegaGamma`: The width of the solar hidden photon production resonance (at m ~ wp) as a function of solar radius and hidden photon energy.
 
 - The flux is then calculated using the formula `chi^2 x m^4 x wG x flux / ( (m^2 - wp^2)^2 + (wG)^2 )`.
 
@@ -21,7 +21,7 @@ This data directory contains the description of different solar hidden photon fl
 
 	+ `.dat` ASCII tables: The format of the tables is fixed to 1000 lines. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.001 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.999 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
 
-	+ `.N200f` binary tables: It is a float binary table with 200 columns. The format of the tables is fixed to 100 rows. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.001 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.999 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
+	+ `.N200f` binary tables: It is a float binary table with 200 columns. The format of the tables is fixed to 1000 rows. Each line inside the file corresponds to one integrated solar ring, the first line corresponding to the inner ring (Rtop = 0.001 x Rsun), and the last line corresponding to the outer ring (Rbottom=0.999 x Rsun). Each column value corresponds to the integrated energy spectrum in steps of 100 eV. The first value in each row corresponds to the contribution to the solar axion flux from 0 to 100 eV. The energy range goes to 20 keV.
 
 - **Units**:
 	+ *Flux*: The solar flux given in the `.dat` and `.flux` tables will be measured in `cm-2 s-1 keV-1`.
