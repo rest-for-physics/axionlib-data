@@ -88,10 +88,19 @@
 		<parameter name="seed" value="137" />
 	</TRestAxionSolarQCDFlux>
 
-	<TRestAxionSolarHiddenPhotonFlux name="OSheaHiddenPhoton" verboseLevel=="warning" >
+	<TRestAxionSolarHiddenPhotonFlux name="OSheaHiddenPhoton_Flux" verboseLevel="warning" >
 		<parameter name="couplingType" value="g_eff"/>
 		<parameter name="couplingStrength" value="1"/>
 		<parameter name="fluxDataFile" value="hiddenPhoton_flux_OShea_202306.dat"/>
+		<parameter name="plasmaFreqDataFile" value="hiddenPhoton_plasmaFreq_OShea_202306.dat"/>
+		<parameter name="omegaGammaDataFile" value="hiddenPhoton_omegaGamma_OShea_202306.dat"/>
+		
+	<TRestAxionSolarHiddenPhotonFlux name="OSheaHiddenPhoton" verboseLevel="warning" >
+		<parameter name="couplingType" value="g_eff"/>
+		<parameter name="couplingStrength" value="1"/>
+		<parameter name="fluxDataFile" value="hiddenPhoton_flux_OShea_202306.N200f"/>
+		<parameter name="plasmaFreqDataFile" value="hiddenPhoton_plasmaFreq_OShea_202306.N200f"/>
+		<parameter name="omegaGammaDataFile" value="hiddenPhoton_omegaGamma_OShea_202306.N200f"/>
 
 		<parameter name="seed" value="137" />
 	</TRestAxionSolarHiddenPhotonFlux>
