@@ -25,6 +25,8 @@ This data directory contains the description of different solar hidden photon fl
 
 - **Units**:
 	+ *Flux*: The solar flux given in the `.dat` and `.flux` tables will be measured in `cm-2 s-1 keV-1`.
+	+ *Coupling*: The kinetic mixing parameter `chi` is dimensionless.
+ 	+ *Mass*: The default units for hidden photon mass are `eV`.
 
 ## List of solar flux tables available
 
