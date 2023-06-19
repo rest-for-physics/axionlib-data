@@ -1,0 +1,34 @@
+<xml>
+	<globals>
+		<constant name="pi" value="3.1415927" />
+	</globals>
+
+	<TRestAxionTrueWolterOptics name="xmm" verboseLevel="warning" >
+		<parameter name="opticsFile" value="LLNL.Wolter" />
+
+		<parameter name="mirrorLength" value="150" />
+
+		<TRestAxionOpticsMirror name="LLNL_bilayer">
+			<parameter name="mirrorType" value="Bilayer" />
+
+		    <parameter name="layerThicknessTop" value="10.125" />
+		    <parameter name="sigmaTop" value="0" />
+
+		    <parameter name="layerBottom" value="Pt" />
+		    <parameter name="layerThicknessBottom" value="12.3755" />
+		    <parameter name="sigmaBottom" value="0.4" />
+
+			<parameter name="substrate" value="SiO2" />
+		</TRestAxionOpticsMirror>
+
+		<TRestSpiderMask name="spider" verboseLevel="warning">
+			<parameter name="maskRadius" value="70cm"/>
+			<parameter name="offset" value="(0,0)cm"/>
+			<parameter name="rotationAngle" value="0"/>
+			<parameter name="armsWidth" value="2.29deg"/>
+			<parameter name="armsSeparationAngle" value="360./16degrees"/>
+			<parameter name="initialRadius" value="0cm"/>
+		</TRestSpiderMask>
+
+	</TRestAxionTrueWolterOptics>
+</xml>
