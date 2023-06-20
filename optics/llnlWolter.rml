@@ -3,10 +3,10 @@
 		<constant name="pi" value="3.1415927" />
 	</globals>
 
-	<TRestAxionTrueWolterOptics name="xmm" verboseLevel="warning" >
+	<TRestAxionWolterOptics name="xmm" verboseLevel="warning" >
 		<parameter name="opticsFile" value="LLNL.Wolter" />
 
-		<parameter name="mirrorLength" value="150" />
+		<parameter name="mirrorLength" value="225" />
 
 		<TRestAxionOpticsMirror name="LLNL_bilayer">
 			<parameter name="mirrorType" value="Bilayer" />
@@ -30,5 +30,5 @@
 			<parameter name="initialRadius" value="0cm"/>
 		</TRestSpiderMask>
 
-	</TRestAxionTrueWolterOptics>
+	</TRestAxionWolterOptics>
 </xml>
