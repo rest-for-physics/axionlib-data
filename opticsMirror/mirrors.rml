@@ -32,4 +32,18 @@
 
 		<parameter name="substrate" value="Ni" />
 	</TRestAxionOpticsMirror>
+
+	<TRestAxionOpticsMirror name="LLNL_bilayer">
+		<parameter name="mirrorType" value="Bilayer" /> <!-- In reality it is multilayer, but this does not exist in REST. Here only the top bilayer is included -->
+
+		<parameter name="layerTop" value="C" />
+		<parameter name="layerThicknessTop" value="10.125" />
+		<parameter name="sigmaTop" value="1" />
+
+		<parameter name="layerBottom" value="Pt" />
+		<parameter name="layerThicknessBottom" value="12.3755" />
+		<parameter name="sigmaBottom" value="1" />
+
+		<parameter name="substrate" value="SiO2" />
+	</TRestAxionOpticsMirror>
 </mirrors>
