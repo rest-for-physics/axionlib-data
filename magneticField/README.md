@@ -35,4 +35,4 @@ List of magnetic fields available
 
 - `Mentink_202401.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X,Y and 50mm in Z. It defines the field between -10m and 10m, reproducing the magnetic volume size as defined in the original file.
 
-- `Mentink_202401.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X,Y and 50mm in Z. It defines the field between -6m and 6m, introducing an artificial cut-off to the original file size. The field in that boundary is already below 0.1T.
+- `Mentink_202401_cutoff.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X,Y and 50mm in Z. It defines the field between -6m and 6m, introducing an artificial cut-off to the original file size. The field in that boundary is already below 0.1T.
