@@ -32,3 +32,7 @@ List of magnetic fields available
 - `Bykovskiy_202004.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X and Y, and 50mm in Z.
 
 - `Bykovskiy_202004.xls` : The original file generated with Matlab used to provide the file `Bykovskiy_202004.bin`.
+
+- `Mentink_202401.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X,Y and 50mm in Z. It defines the field between -10m and 10m, reproducing the original file size.
+
+- `Mentink_202401.bin` : It contains the magnetic field definition for babyIAXO with a regular mesh precision of 10mm in X,Y and 50mm in Z. It defines the field between -6m and 6m, introducing an artificial cut-off to the original file size. The field in that boundary is already below 0.1T.

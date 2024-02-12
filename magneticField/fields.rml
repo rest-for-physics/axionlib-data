@@ -9,6 +9,16 @@
         <addMagneticVolume fileName="Bykovskiy_201906.dat" position="(0,0,0)mm" />
     </TRestAxionMagneticField>
 
+	<TRestAxionMagneticField name="babyIAXO_2024"
+		title="Field definition with 1cm precision in X,Y and 5cm in Z for babyIAXO magnet. Full length." >
+        <addMagneticVolume fileName="Mentink_202401.bin" position="(0,0,0)mm" />
+    </TRestAxionMagneticField>
+
+	<TRestAxionMagneticField name="babyIAXO_2024_cutoff"
+		title="Field definition with 1cm precision in X,Y and 5cm in Z for babyIAXO magnet. Cut-off in Z-range (-6,6)m" >
+        <addMagneticVolume fileName="Mentink_202401_cutoff.bin" position="(0,0,0)mm" />
+    </TRestAxionMagneticField>
+
     <TRestAxionMagneticField name="babyIAXO_HD" title="Field definition with 1cm precision in XY, 5cm in Z for babyIAXO magnet." verboseLevel="info" >
         <addMagneticVolume fileName="Bykovskiy_202004.bin" position="(0,0,0)mm" />
     </TRestAxionMagneticField>
