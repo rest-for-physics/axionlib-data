@@ -1,0 +1,75 @@
+<xml>
+	<globals>
+		<constant name="pi" value="3.1415927" />
+	</globals>
+
+	<TRestAxionWolterOptics name="nustar" verboseLevel="warning" >
+		<parameter name="opticsFile" value="NuSTAR.Wolter" />
+
+		<parameter name="mirrorLength" value="225" />
+
+		<TRestAxionOpticsMirror name="NuSTAR">
+			<parameter name="mirrorType" value="Single" />
+
+			<parameter name="layerTop" value="Au" />
+			<parameter name="layerThicknessTop" value="250" />
+			<parameter name="sigmaTop" value="0.4" />
+
+			<parameter name="substrate" value="Ni" />
+		</TRestAxionOpticsMirror>
+		
+	<TRestRadialStrippedMask name="radialStrips" verboseLevel="warning">
+	<!-- This is the spider but with equally wide strips -->
+		<parameter name="maskRadius" value="19.4cm" />
+		<parameter name="offset" value="(0,0)cm" />
+		<parameter name="rotationAngle" value="30degrees" />
+
+		<parameter name="initialRadius" value="5.4cm" />
+		<parameter name="internalRegionRadius" value="0cm" />
+
+		<parameter name="stripsAngle" value="60degrees" />
+		<parameter name="stripsThickness" value="0.7cm" />
+	</TRestRadialStrippedMask>
+
+	<TRestRadialStrippedMask name="radialStrips" verboseLevel="warning">
+	<!-- These are graphit spacers extending from the innermost mirrors to the outermost -->
+		<parameter name="maskRadius" value="19.4cm" />
+		<parameter name="offset" value="(0,0)cm" />
+		<parameter name="rotationAngle" value="0degrees" />
+
+		<parameter name="initialRadius" value="5.4cm" />
+		<parameter name="internalRegionRadius" value="0cm" />
+
+		<parameter name="stripsAngle" value="15degrees" />
+		<parameter name="stripsThickness" value="0.22cm" />
+	</TRestRadialStrippedMask>
+
+	<TRestRadialStrippedMask name="radialStrips" verboseLevel="warning">
+	<!-- This is for the gaps between segments and spacers but these are not for the inner 50 layers of the optic -->
+		<parameter name="maskRadius" value="19.4cm" />
+		<parameter name="offset" value="(0,0)cm" />
+		<parameter name="rotationAngle" value="0degrees" />
+
+		<parameter name="initialRadius" value="10,95cm" />
+		<parameter name="internalRegionRadius" value="10,94cm" />
+
+		<parameter name="stripsAngle" value="60degrees" />
+		<parameter name="stripsThickness" value="0.7cm" />
+	</TRestRadialStrippedMask>
+
+	<TRestRadialStrippedMask name="radialStrips" verboseLevel="warning">
+	<!-- These are additional graphit spacers not on the inner 50 layers of the optics -->
+		<parameter name="maskRadius" value="19.4cm" />
+		<parameter name="offset" value="(0,0)cm" />
+		<parameter name="rotationAngle" value="7.5degrees" />
+
+		<parameter name="initialRadius" value="10,95cm" />
+		<parameter name="internalRegionRadius" value="10,94cm" />
+
+		<parameter name="stripsAngle" value="15degrees" />
+		<parameter name="stripsThickness" value="0.22cm" />
+	</TRestRadialStrippedMask>
+ 
+	
+	</TRestAxionWolterOptics>
+</xml>
