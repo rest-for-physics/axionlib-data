@@ -1,9 +1,34 @@
 <?xml version="1.0"?>
 <gas>
+	<globals>
+		<variable name="liquidHydrogenDensity" value="0.075" /> <!-- g/cm^3 -->
+		<variable name="liquidNeonDensity" value="1.207" /> <!-- g/cm^3 -->
+	</globals>
+
     <TRestAxionBufferGas name="helium" verboseLevel="warning">
         <gas name="He" density="0.0025e-6g/cm^3"/>
     </TRestAxionBufferGas>
     <TRestAxionBufferGas name="HeNeMixture" verboseLevel="warning">
         <gas name="He+Ne" density="0.0025e-6g/cm^3+1.0mg/cm^3"/>
+    </TRestAxionBufferGas>
+
+	<!-- Liquid H 50% - Neon 50% -->
+    <TRestAxionBufferGas name="HNeMixture_1" verboseLevel="warning">
+        <gas name="H+Ne" density="0.0375g/cm^3+0.6035g/cm^3"/>
+    </TRestAxionBufferGas>
+
+	<!-- Liquid H 70% - Neon 30% -->
+    <TRestAxionBufferGas name="HNeMixture_2" verboseLevel="warning">
+        <gas name="H+Ne" density="0.02625g/cm^3+0.3621g/cm^3"/>
+    </TRestAxionBufferGas>
+
+	<!-- Liquid H 80% - Neon 20% -->
+    <TRestAxionBufferGas name="HNeMixture_3" verboseLevel="warning">
+        <gas name="H+Ne" density="0.03g/cm^3+0.2414g/cm^3"/>
+    </TRestAxionBufferGas>
+
+	<!-- Liquid H 90% - Neon 10% -->
+    <TRestAxionBufferGas name="HNeMixture_4" verboseLevel="warning">
+        <gas name="H+Ne" density="0.03375g/cm^3+0.1207g/cm^3"/>
     </TRestAxionBufferGas>
 </gas>
