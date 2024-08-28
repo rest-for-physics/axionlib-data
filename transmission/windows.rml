@@ -48,5 +48,15 @@
 	<TRestAxionXrayWindow name="cathode" verboseLevel="info" center="(0,0,0)mm" thickness="0.02um" material="Al" >
 		<TRestPatternMask name="mask" verboseLevel="warning" maskRadius="8mm" />
 	</TRestAxionXrayWindow>
+
+	<TRestSpiderMask name="TieFighter" verboseLevel="info">
+		<parameter name="maskRadius" value="8.5mm"/>
+		<parameter name="offset" value="(0,0)cm"/>
+		<parameter name="rotationAngle" value="0deg"/>
+		<parameter name="armsWidth" value="2.6357deg"/>
+		<parameter name="armsSeparationAngle" value="45degrees"/>
+		<parameter name="initialRadius" value="4.55mm"/>
+		<parameter name="internalRegionRadius" value="4.25mm"/>
+	</TRestSpiderMask>
 	
 </transmission>
