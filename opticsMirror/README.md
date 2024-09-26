@@ -2,4 +2,4 @@ The following directory contains data files with X-ray reflectivity pre-download
 
 See [TRestAxionOpticsMirror](https://sultan.unizar.es/rest/classTRestAxionOpticsMirror.html) documentation for further details on how to generate or load these datasets.
 
-The file is basically a table with 501 rows, each row corresponding to an energy, starting at 30eV in increments of 30eV. The last row corresponds with 15keV. The number of columns is 901, describing the data as a function of the angle of incidence in the range between 0 and 9 degrees with 0.01 degree precision.
+The file is basically a table with 500 rows, each row corresponding to an energy, starting at 30eV in increments of 30eV. The last row corresponds with 15keV. The number of columns is 901, describing the data as a function of the angle of incidence in the range between 0 and 9 degrees with 0.01 degree precision.
